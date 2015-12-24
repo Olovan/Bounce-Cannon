@@ -1,0 +1,90 @@
+CannonBall Header File
+
+class cannonBall
+{
+private:
+Circle shape;
+vector2f velocity;
+bool isActive;
+
+public:
+sf::Vector2f getVelocity();
+setVelocity(vector2f velocity);
+bool getIsActive();
+setIsActive(bool isActive);
+void moveBall(sf::vector2f& velocity);
+void launch(sf::Vector2f);
+void update();
+
+sf::vector2f getPosition();
+void setPosition(sf::Vector2f position);
+float left();
+float right();
+float top();
+float bottom();
+}
+
+
+
+
+
+Cannon Header File //Might just not have a cannon at all and just use ball.
+
+#include “CannonBall.h”
+#include <SFML/graphics.hpp>
+
+class Cannon 
+{
+CannonBall ball;
+rectangle shape; //Maybe a sprite instead later
+
+void fireBall();
+void rotateToTarget(sf::Vector2f target)
+
+update();
+
+left();
+right();
+top();
+bottom();
+
+}
+
+
+
+
+
+
+Target Header File
+
+class Target
+{
+
+
+
+void update();
+
+float left();
+float right();
+float top();
+float bottom();
+}
+
+
+
+
+Goal Header File
+
+class Goal
+{
+float velocity;
+
+void update();
+
+float setVelocity();
+float getVelocity();
+float left();
+float right();
+float top();
+float bottom();
+}
