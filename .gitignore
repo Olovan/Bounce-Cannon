@@ -4,5 +4,7 @@
 #Object
 *.o
 
-#Codeblocks Project File
+#Codeblocks Files
 *.cbp
+*.layout
+*.depend
